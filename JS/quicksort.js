@@ -2,6 +2,10 @@ console.log('Quick Sort!');
 
 
 const quickSort = (arr) => {
+	if (arr.length <= 1) {
+		return arr;
+	};
+
 	let pivot = arr[arr.length -  1];
 	let indx0 = 0;
 
