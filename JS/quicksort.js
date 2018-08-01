@@ -11,11 +11,8 @@ const quickSort = (arr) => {
 	let pivot = arr[arr.length - 1];
 
 	for (let i = 0, len = arr.length; i < len; i ++) {
-		if (arr[i] < pivot) {
-			const temp = arr[indx0];
-			arr[indx0] = arr[i];
-			arr[i] = temp;
-			indx0 ++; 
+		if (arr[i] <= pivot) {
+			left.push(arr[i]);
 		};
 	};
 	arr[arr.length - 1] = arr[indx0];
