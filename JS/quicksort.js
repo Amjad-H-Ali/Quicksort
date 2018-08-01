@@ -18,9 +18,9 @@ const quickSort = (arr) => {
 			right.push(arr[i]);
 		};
 	};
-	
+	return [...quickSort(left),pivot,...quickSort(right)];
 };
 
 
-quickSort([7, 3, 0, 9, 2, 1, 5]);
+console.log(quickSort([7, 3, 0, 9, 2, 1, 5, 7]));
 
