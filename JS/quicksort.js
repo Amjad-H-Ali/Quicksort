@@ -6,8 +6,8 @@ const quickSort = (arr) => {
 		return arr;
 	};
 
-	let pivot = arr[arr.length -  1];
-	let indx0 = 0;
+	let left = [];
+	let right = [];
 
 	for (let i = 0, len = arr.length; i < len; i ++) {
 		if (arr[i] < pivot) {
