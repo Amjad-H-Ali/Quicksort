@@ -10,14 +10,15 @@ const quickSort = (arr) => {
 	let right = [];
 	let pivot = arr[arr.length - 1];
 
-	for (let i = 0, len = arr.length; i < len; i ++) {
+	for (let i = 0, len = arr.length - 1; i < len; i ++) {
 		if (arr[i] <= pivot) {
 			left.push(arr[i]);
+		}
+		else {
+			right.push(arr[i]);
 		};
 	};
-	arr[arr.length - 1] = arr[indx0];
-	arr[indx0] = pivot
-	console.log(arr);
+	
 };
 
 
